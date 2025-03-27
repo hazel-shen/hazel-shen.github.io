@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hazel Shen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+    .center {
+      text-align: center;
+    }
+    .avatar {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0.4em 0 0.2em;
+      font-size: 1.8em;
+    }
+    p {
+      line-height: 1.8;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #005ea2;
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my GitHub Page with HTTPS.</p>
+  <div class="container">
+    <div class="card center">
+      <img src="https://avatars.githubusercontent.com/u/6478860?v=4" alt="Hazel Shen" class="avatar"/>
+      <h1>Hi, I'm Hazel 👋</h1>
+      <p>DevOps Engineer | Curious builder | Writing @ <a href="https://hazel.style" target="_blank">hazel.style</a></p>
+    </div>
+
+    <div class="card">
+      <p>I'm a DevOps engineer with a curious mind and a passion for elegant infrastructure. I love automation, observability, and designing systems that scale smoothly and securely.</p>
+
+      <p>With a background in backend development and presales engineering, I bring a blend of tech and communication skills to every project. In recent years, I've been deep diving into infrastructure as code, cloud-native solutions, and exploring the world of smart contracts and Web3.</p>
+
+      <p>Outside of work, I enjoy sharing thoughts on engineering, tools, and developer culture on my blog. I believe good tooling leads to great developer experience — and that’s something I constantly chase.</p>
+    </div>
+
+    <div class="card">
+      <h2>Links</h2>
+      <ul>
+        <li>🌐 Blog: <a href="https://hazel.style" target="_blank">hazel.style</a></li>
+        <li>💻 GitHub: <a href="https://github.com/hazel-shen" target="_blank">hazel-shen</a></li>
+        <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/hls00/" target="_blank">hls00</a></li>
+        <li>📬 Email: <a href="mailto:hazel@hazelshen.me">hazel@hazelshen.me</a></li>
+      </ul>
+    </div>
+
+    <div class="card center">
+      <h2>GitHub Stats</h2>
+      <img src="https://github-readme-stats.vercel.app/api?username=hazel-shen&show_icons=true&hide_rank=true&theme=default" alt="Hazel's GitHub Stats" />
+    </div>
+  </div>
 </body>
 </html>
